@@ -1,0 +1,445 @@
+* {
+    /* Universal selector */
+    box-sizing: border-box;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+:root {
+    --boxcolor: rgb(217, 255, 0);
+}
+
+p {
+    background-color: rgb(255, 234, 0);
+    color: red;
+    margin: 20px;
+}
+
+#firstPara {
+    color: red;
+    /*color by name*/
+    /* height: 96px; */
+    width: 40%;
+    /* border  */
+    border-width: 8px;
+    border-color: aqua;
+    border-style: solid;
+    border-radius: 15%;
+    /* padding  */
+    padding-top: 69px;
+    padding-right: 35px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    /* margin  */
+    margin-top: 69px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    /* float and clear */
+    float: left;
+    clear: both;
+}
+
+#secondPara {
+    color: rgb(67, 175, 34);
+    /*color by rgb*/
+    /* height: 110px; */
+    width: 40%;
+    border: 10px red double;
+    /* padding */
+    padding: 69px 35px 60px 40px;
+    /*padding: top right bottom left*/
+    /* margin */
+    margin: 69px 35px 60px 20px;
+    /*margin: top right bottom left*/
+    /* float and clear */
+    float: right;
+    /* clear: both; */
+}
+
+#thirdPara {
+    color: #25489b;
+    /*color by hexavalue*/
+    /* height: 100px; */
+    width: 300px;
+    /* border */
+    border-bottom: 12px rgb(1, 255, 94) double;
+    border-top: 15px rgb(19, 17, 176) solid;
+    border-left: 20px rgb(31, 1, 255) solid;
+    border-right: 18px rgb(123, 0, 0) double;
+    /* border-radius */
+    border-top-left-radius: 10%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 15%;
+    /* padding */
+    padding: 15px 40px;
+    /*padding: y-axis x-axis*/
+    /* margin */
+    margin: 20px 40px;
+    /*margin: y-axis x-axis*/
+    /* float and clear */
+    float: left;
+    clear: both;
+}
+
+#fourthPara {
+    /* height: 300px; */
+    width: 200px;
+    border: 10px double rgb(4, 102, 159);
+    padding: 15px;
+    margin: 20px;
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1');
+    background-repeat: no-repeat;
+    background-position: 250px 160px;
+    /* float and clear */
+    float: left;
+    /* clear: both; */
+}
+
+.container {
+    overflow: auto;
+    border: 10px solid blue;
+    padding: 30px 20px;
+    margin: 60px 20px;
+    height: 800px;
+}
+
+h3 {
+    margin: 50px auto 20px auto;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    background-color: rgb(153, 6, 6);
+    color: rgb(169, 249, 50);
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 10%;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+    box-shadow: -5px 6px 3px 1px green;
+}
+
+.btn:hover {
+    background-color: #ee6464;
+}
+
+.nav {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(7, 7, 7);
+    overflow: auto;
+}
+
+.nav:hover {
+    border: 4px solid black;
+    background-color: rgb(53, 52, 52);
+}
+
+.nav a {
+    color: var(--boxcolor);
+    background-color: none;
+    float: left;
+    padding: 10px;
+    margin: 8px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: rgb(122, 42, 42);
+    border-radius: 10px;
+    box-shadow: inset 2px -3px 2px 2px rgb(240, 128, 128);
+}
+
+.nav li {
+    list-style: none;
+}
+
+.navlink {
+    cursor: pointer;
+}
+
+.nav input {
+    border-radius: 20px;
+    margin: 8px 14px;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    font-size: 15px;
+}
+
+#container2 .box {
+    display: inline-block;
+    border: 2px solid blue;
+    width: 100px;
+    height: 200px;
+}
+
+#box1 {
+    position: static;
+    left: 10px;
+    top: 10px;
+}
+
+#box2 {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    /* transition */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+
+#box3 {
+    position: relative;
+    left: 10px;
+    top: 10px;
+
+    /* for make hide as well as the place free  */
+    /* display: none; */
+
+    /* for make hide but the place to be reserved */
+    /* visibility: hidden; */
+
+    /* z-index: 12; */
+    /* z-index only works on position: absolute, relative, fixed, sticky element; */
+}
+
+#box4 {
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    /* transition: transition-property transition-duration transition-timing-function transition-delay; */
+    transition: all 4s ease-in 2s;
+}
+
+#box5 {
+    position: sticky;
+    left: 400px;
+}
+
+#container2 .box:hover {
+    display: flex;
+    width: 200px;
+    height: 400px;
+    background-color: rgb(34, 14, 170);
+    align-items: center;
+    justify-content: center;
+}
+
+#container3 {
+    display: flex;
+    flex-direction: row;
+    /*By default*/
+    flex-wrap: wrap;
+    /* flex-flow: row wrap;  */
+    justify-content: center;
+    /*centre at x axis*/
+    align-items: center;
+    /*centre at y axis*/
+}
+
+.item {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(7, 182, 37);
+    transition: all 2s ease-in 0.3s;
+}
+
+#item1 {
+    order: 2;
+    /* the higher order makes the item at laster position */
+    flex-grow: 2;
+    /*the ratio decides how fast the item grow*/
+    flex-shrink: 2;
+    /*the ratio decides how fast the item shrink*/
+    flex-basis: 150px;
+    /*if flex-direction is row -> width, if flex-direction is column -> height*/
+    align-self: flex-end;
+}
+
+#item1:hover {
+    transform: rotate(360deg);
+}
+
+#item2 {
+    flex: 3 2 250px;
+    /*flex-grow flex-shrink flex-basis*/
+    align-self: flex-start;
+}
+
+#item2:hover {
+    transform: skew(30deg);
+}
+
+#item4 {
+    align-self: center;
+}
+
+#item3:hover {
+    transform: translate(100px, 200px);
+}
+
+@media (max-width: 600px) {
+    #item3 {
+        background-color: #25489b;
+    }
+}
+
+/* for p contained in div  */
+div p {
+    background-color: rgb(249, 136, 136);
+}
+
+/* for p just right cointained inside div  */
+div>p {
+    background-color: rgb(1, 255, 94);
+}
+
+/* for p just next sivling of a div  */
+div+p {
+    background-color: rgb(112, 230, 243);
+}
+
+a[target] {
+    color: black;
+}
+
+input[type='text'],
+[type='email'] {
+    background-color: rgb(237, 248, 87);
+}
+
+
+#container4 {
+    background-color: #fff;
+    /* animation  */
+    animation-name: Animesh1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+#container4 :nth-child(2n + 1) {
+    color: red;
+    /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+    animation: Animesh2 6s ease-in 2s infinite backwards;
+}
+
+#container4 :nth-child(even) {
+    color: blue;
+    animation: Animesh2 6s ease-in 2s infinite backwards;
+    animation-direction: reverse;
+}
+
+#container4 :nth-child(3) {
+    color: yellow;
+}
+
+#container4 li {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    width: 12rem;
+}
+
+@keyframes Animesh1 {
+    from {
+        background-color: pink;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+@keyframes Animesh2 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 80%;
+        top: 0px;
+    }
+
+    50% {
+        left: 80%;
+        top: 500px;
+    }
+
+    75% {
+        left: 0px;
+        top: 500px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+#container5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: 2fr 4fr;
+    grid-auto-rows: 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 5rem;
+}
+
+#container5 .box {
+    display: flex;
+    border: 2px solid red;
+    background-color: rgb(100, 232, 109);
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#container5 :nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3/ span 2;
+}
+
+#container6 {
+    display: grid;
+    grid-template-areas: 'it1' 'it2 it2 it3' 'it2 it4 it4';
+}
+
+#it-1 {
+    grid-area: it1;
+}
+
+#it-2 {
+    grid-area: it2;
+}
+
+#it-3 {
+    grid-area: it3;
+}
+
+#it-4 {
+    grid-area: it4;
+}
+
+#form1 {
+    display: none;
+}

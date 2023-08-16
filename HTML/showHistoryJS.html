@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Check</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        #back_button {
+            background-color: #ef4646;
+            color: black;
+            font-weight: bolder;
+            width: 10vw;
+            height: 10vh;
+            padding: 3px;
+            margin: 20px auto;
+            display: block;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        p, input, select {
+            color: green;
+            display: block;
+            width: 40%;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="back_button" >Back to Prev Page</button>
+    <p id="show">Click the button above to go back to the previous page</p>
+    <p id="keyPosition"></p>
+    <input type="text" id="input">
+    <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="trans">TransGender</option>
+    </select>
+
+
+    <script>
+        const back_button = document.querySelector('#back_button');
+        const show = document.querySelector('#show');
+        const keyPosition = document.querySelector('#keyPosition');
+        const input = document.querySelector('#input');
+        const gender = document.querySelector('#gender');
+        // Mouse Events
+        back_button.addEventListener('click', () => window.history.back());
+        back_button.addEventListener('mousedown', () => show.innerHTML = "Mouse is down");
+        back_button.addEventListener('mouseup', () => show.innerHTML = "Mouse is up");
+        back_button.addEventListener('mouseenter', () => show.innerHTML = "Mouse is entering");
+        back_button.addEventListener('mouseleave', () => show.innerHTML = "Mouse is leaving");
+        // Keyboard Events
+        input.addEventListener('keypress', () => show.innerHTML = `you have press the key ${event.key} and its code is ${event.code}`);
+        input.addEventListener('keyup', () => keyPosition.innerHTML = 'key is up');
+        input.addEventListener('keydown', () => keyPosition.innerHTML = 'key is down');
+
+        gender.addEventListener('change', () => keyPosition.innerHTML = `Gender is changed to ${gender.value}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animesh.com</title>
+    <!-- adding external css file -->
+    <link rel="stylesheet" href="\CSS\test.css">
+    <!-- adding internal css file -->
+    <style>
+        .home {
+            color: blue;
+            background-color: yellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 32px;
+            line-height: 1.3em;
+        }
+
+        h3 {
+            color: red;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        /* styling with id  */
+        #myEmail {
+            color: red;
+        }
+
+        /* styling with class */
+        .animesh {
+            color: rgb(13, 0, 255);
+            background-color: yellow;
+        }
+    </style>
+    <script src="\JAVASCRIPT\test.js"></script>
+</head>
+
+<body>
+    <!-- The header tags -->
+    <h1 style="color: rgb(0, 220, 106); background-color: red">Headings</h1>
+    <h2>animesh</h2>
+    <h3>daddy</h3>
+    <h4>dear</h4>
+    <h5>dadda</h5>
+    <h6>rounak</h6>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perspiciatis repudiandae laborum doloremque?
+        Quaerat ea accusantium excepturi quibusdam sapiente praesentium tempore velit commodi consectetur amet incidunt
+        <strong>Animesh is strong</strong> nisi rerum doloremque, aperiam vel placeat totam et eveniet consequuntur
+        dolorem esse. <br> Quibusdam, sed animi tenetur error earum possimus nihil quaerat quod modi ab nam maxime
+        tempore, at similique nemo facilis deleniti praesentium ullam autem obcaecati totam officia expedita! Ad quod ex
+        <span>heel se marenge tummhe</span> expedita saepe illum nostrum odio laudantium sapiente <em>is it italic</em>
+        voluptatum! Fugiat itaque incidunt adipisci ad blanditiis perspiciatis nihil hic? Incidunt ex, et asperiores,
+        aperiam vero aut harum, odit illum itaque voluptas iste veritatis adipisci.
+    </p>
+    <hr>
+    <!-- picture and links -->
+    <h3>Links and pictures</h3>
+    <a class="home" href="https://google.com" target="_blank">Go to google</a><br>
+    <a class="home" href="https://facebook.com" target="_blank">Go to facebook</a><br>
+    <a class="home" href="https://youtube.com" target="_blank">Go to youtube</a><br>
+    <a class="home" href="https://twitter.com" target="_blank">Go to twitter</a><br>
+    <a class="home" href="https://netflix.com" target="_blank">Go to netflix</a><br>
+    <img src="https://1.bp.blogspot.com/-rtGUOEDGWmw/XS3KXchPA8I/AAAAAAAAAhg/e5BAq8RGfo0PCVggrZB0YMHCPNjmpgI3QCLcBGAs/s320/15632819094407641200387061959484.jpg"
+        alt="Error to display image" width="400" height="300">
+    <!-- ordered and unordered list -->
+    <h3>List Making</h3>
+    <ul type="square">
+        <li>JU</li>
+        <li>KGEC</li>
+        <li>JGEC
+            <ol type="a">
+                <li>CSE</li>
+                <li>IT</li>
+                <li>ECE</li>
+                <li>EE</li>
+                <li>ME</li>
+                <li>CE</li>
+            </ol>
+        </li>
+        <li>CU</li>
+        <li>MAKAUT</li>
+    </ul>
+    <!-- Table in HTML  -->
+    <h3>Making Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Skill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Animesh</td>
+                <td>CSE</td>
+                <td>C++</td>
+            </tr>
+            <tr>
+                <td>Prem</td>
+                <td>CSE</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Vivek</td>
+                <td>IT</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>Arnab</td>
+                <td>EE</td>
+                <td>Java</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- HTML form making -->
+    <h3>Making Forms</h3>
+    <button class="btn" id="formbtn" onclick="toggleHide('form1', 'formbtn')">Show</button>
+    <form action="backend.php" id="form1">
+        <div class="animesh">
+            <label for="myName">Name: </label>
+            <input type="text" name="myName" id="myName">
+        </div>
+        <br>
+        <div>
+            <label for="myRoll">Roll No. : </label>
+            <input type="number" name="myRoll" id="myRoll">
+        </div>
+        <br>
+        <div>
+            <label for="myEmail">Email: </label>
+            <input type="email" name="myEmail" id="myEmail">
+        </div>
+        <br>
+        <div class="animesh">
+            <label for="myStatus">Are you single? : </label>
+            <input type="checkbox" name="relationStatus" id="myStatus">
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="myDate" id="dob">
+        </div>
+        <br>
+        <div>
+            <label for="myGender">Gender : </label>
+            Male <input type="radio" name="myGender" id="myGender"> Female <input type="radio" name="myGender"
+                id="myGender"> Transgender <input type="radio" name="myGender" id="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself:
+            <br>
+            <textarea name="" id="" placeholder="Write something about yourself" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="department">Department</label>
+            <select name="myDepartment" id="department">
+                <option value="cse">Computer Science and Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="ece">Electronic and communication Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+                <option value="ce">Civil Engineering</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+    <!-- inline and block eliments -->
+    <h3>Inline and block Eliments</h3>
+    <p style="border: 2px solid red;">The paragragh</p>
+    <span style="border: 2px solid black;">The span </span>
+    <div style="border: 2px solid green;">The division</div>
+    <ul style="border: 2px solid blue;">
+        <li>this is a unorderd list</li>
+    </ul>
+    <ol style="border: 2px solid gold;">
+        <li>this is a orderd list</li>
+    </ol>
+    <strong style="border: 2px solid yellow;">The strong</strong>
+    <em style="border: 2px solid pink;">The embed line</em>
+    <a style="border: 2px solid brown;" href="https://flipkart.com" target="_blank">The anchor attribute</a>
+    <img style="border: 2px solid gray;" src="\Project\Project_1\photo1.jpg" alt="Error in opening" width="100px"></img>
+
+    <!-- HTML entities -->
+    <h3>HTML entities</h3>
+    &lt;p&gt; &nbsp; &copy; etc.
+
+    <div class="container" id="container1">
+        <div id="firstPara">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorum dolores nulla possimus hic unde
+                blanditiis vel ipsam at reiciendis
+            </p>
+        </div>
+        <div id="secondPara">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorum dolores nulla possimus hic unde
+                blanditiis vel ipsam at reiciendis
+            </p>
+        </div>
+        <div id="thirdPara">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorum dolores nulla possimus hic unde
+                blanditiis vel ipsam at reiciendis
+            </p>
+        </div>
+        <div id="fourthPara">
+            <p id="paraofpara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorum dolores nulla possimus hic unde
+                blanditiis vel ipsam at reiciendis
+            </p>
+            <button class="btn" id="readbtn" onclick="toggleHide('paraofpara', 'readbtn')">Hide</button>
+            <a href="" class="btn">Contact Us</a>
+        </div>
+    </div>
+    <header>
+        <nav class="nav" id="navbar">
+            <ul>
+                <li><a class="navlink">Home</a></li>
+                <li><a class="navlink">About us</a></li>
+                <li><a class="navlink">Contact</a></li>
+                <li><a class="navlink">Enquiry</a></li>
+                <li><a class="navlink">Sign Up</a></li>
+                <input class="navlink" type="text" placeholder="Search content here">
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="container2">
+        <div class="box" id="box1">Static</div>
+        <div class="box" id="box2">Absolute</div>
+        <div class="box" id="box3">Relative</div>
+        <div class="box" id="box4">Fixed</div>
+        <div class="box" id="box5">Sticky</div>
+    </div>
+    <div class="container" id="container3">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+    </div>
+    <div class="container" id="container4">
+        <ul>
+            <li class="list" id="list-1">hello animesh lets finish it</li>
+            <li class="list" id="list-2">hello animesh lets finish it</li>
+            <li class="list" id="list-3">hello animesh lets finish it</li>
+            <li class="list" id="list-4">hello animesh lets finish it</li>
+            <li class="list" id="list-5">hello animesh lets finish it</li>
+            <li class="list" id="list-6">hello animesh lets finish it</li>
+            <li class="list" id="list-7">hello animesh lets finish it</li>
+            <li class="list" id="list-8">hello animesh lets finish it</li>
+            <li class="list" id="list-9">hello animesh lets finish it</li>
+            <li class="list" id="list-10">hello animesh lets finish it</li>
+        </ul>
+    </div>
+    <div class="container" id="container5">
+        <div class="box">This is box - 1</div>
+        <div class="box">This is box - 2</div>
+        <div class="box">This is box - 3</div>
+        <div class="box">This is box - 4</div>
+        <div class="box">This is box - 5</div>
+        <div class="box">This is box - 6</div>
+        <div class="box" id="showtime">This is box - 7</div>
+        <div class="box">This is box - 8</div>
+        <div class="box">This is box - 9</div>
+        <div class="box">This is box - 10</div>
+        <div class="box">This is box - 11</div>
+        <div class="box">This is box - 12</div>
+        <div class="box">This is box - 13</div>
+        <div class="box">This is box - 14</div>
+        <div class="box">This is box - 15</div>
+    </div>
+    <div class="container" id="cointainer6">
+        <div class="item" id="it-1">item number - 1</div>
+        <div class="item" id="it-2">item number - 2</div>
+        <div class="item" id="it-3">item number - 3</div>
+        <div class="item" id="it-4">item number - 4</div>
+    </div>
+    
+</body>
+
+</html>
